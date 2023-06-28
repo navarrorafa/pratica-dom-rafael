@@ -44,6 +44,8 @@ header , footer {
 
 }
 
+
+
 .flexConteiner > * {
     width: 100%;
     border: 1.5px solid rgba(5, 5, 5 , 0.2);  
@@ -82,9 +84,7 @@ header , footer {
 
 @media screen and (min-width:992px) {
 
-    .gridConteiner {
-        padding: 60px 0;
-    }
+  
     
     .sectionIndex{
         width: 80%;

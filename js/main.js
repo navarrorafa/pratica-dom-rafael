@@ -3,19 +3,19 @@ const arrayCard = [
     {
         url: 'viajes-1.jpg',
         alt: 'viajes 1',
-        msg: 'Lorem ipsum dolor sit amet consectetur adipisicing amet .',
+        msg: 'Lorem ipsum dolor sit amet consectetur .Lorem ipsum dolor sit amet consectetur adipisicing amet .',
         title: 'Viaje 1'
     },
     {
         url: 'viajes-2.jpg',
         alt: 'viajes 2',
-        msg: 'Lorem ipsum dolor sit amet consectetur adipisicing',
+        msg: 'Lorem ipsum dolor sit amet  adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing',
         title: 'Viaje 2'
     },
     {
         url: 'viajes-3.jpg',
         alt: 'viajes 3',
-        msg: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+        msg: 'Lorem ipsum dolor sit amet consectetur .Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         title: 'Viaje 3'
     }
 ]

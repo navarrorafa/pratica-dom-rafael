@@ -12,6 +12,10 @@ img {
     width: 100%;
 }
 
+.divBanner img {
+    height: 300px;
+}
+
 .gridConteiner {
     display: grid;
     grid-template-columns: 1fr;
@@ -26,9 +30,12 @@ header , footer {
     text-align: center;
 }
 
+
+
 .sectionIndex {
     margin: 40px 0px;
 }
+
 
 .flexConteiner{
     display: flex;
@@ -42,11 +49,31 @@ header , footer {
     border: 1.5px solid rgba(5, 5, 5 , 0.2);  
 }
 
+.flexConteiner figure h3   {
+    padding: 5px 10px 0 10px;
+}
+
+.flexConteiner figure p{
+    padding: 0 10px 10px 10px;
+}
+#sectionDestinos{
+    padding-bottom: 50px;
+}
+#sectionDestinos select {
+    width: 100%;
+    height: 40px;
+}
+
+
+
 
 
 
 @media screen and (min-width:768px) {
-
+    .sectionIndex{
+        width: 90%;
+        margin: 40px auto;
+    } 
     
 /*GRID*/
 
@@ -55,10 +82,14 @@ header , footer {
 
 @media screen and (min-width:992px) {
 
-.gridConteiner{
-    width: 80%;
-    margin: auto;
-}    
+    .gridConteiner {
+        padding: 60px 0;
+    }
+    
+    .sectionIndex{
+        width: 80%;
+        margin: 40px auto;
+    }   
 .flexConteiner > * {
     width: calc(33% - 10px);
     margin: auto;
@@ -71,14 +102,7 @@ header , footer {
 
 }/*992*/
 
-@media screen and (min-width:1200px) {
 
-
-
-/*GRID*/
-
-
-}/*1200*/
 
 
 

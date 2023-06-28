@@ -1,0 +1,29 @@
+:root {
+    --colorH-F : #132837 ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+.gridConteiner {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+header , footer {
+    background-color: var(--colorH-F);
+    padding: 30px;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+

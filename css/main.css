@@ -33,17 +33,52 @@ header , footer {
 .flexConteiner{
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
 
 }
 
 .flexConteiner > * {
     width: 100%;
+    border: 1.5px solid rgba(5, 5, 5 , 0.2);  
 }
 
 
-@media   {
+
+
+@media screen and (min-width:768px) {
+
     
+/*GRID*/
+
+
+}/*768*/
+
+@media screen and (min-width:992px) {
+
+.gridConteiner{
+    width: 80%;
+    margin: auto;
+}    
+.flexConteiner > * {
+    width: calc(33% - 10px);
+    margin: auto;
 }
+
+
+/*GRID*/
+
+
+
+}/*992*/
+
+@media screen and (min-width:1200px) {
+
+
+
+/*GRID*/
+
+
+}/*1200*/
 
 
 

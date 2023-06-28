@@ -26,4 +26,30 @@ header , footer {
     text-align: center;
 }
 
+.sectionIndex {
+    margin: 40px 0px;
+}
+
+.flexConteiner{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.flexConteiner > * {
+    width: 100%;
+}
+
+
+@media   {
+    
+}
+
+
+
+
+
+
+
+
 

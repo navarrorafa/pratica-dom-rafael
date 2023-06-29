@@ -22,6 +22,17 @@ const arrayCard = [
 
 const arrayDestinos = ['Brasil' ,'Irlanda','Marrocos','Alemania','Japon' ];
 
+// EVENTOS
+
+// const eventRojo = () => {
+    
+    
+//      console.log()
+// }
+// rojo.addEventListener('mouseenter', (ev) => {
+//     ev.style.border = '5px solid red'
+//   });
+
 
 // SECTION WELCOME
 const sorteoBanner = () => {
@@ -75,6 +86,7 @@ const welcomeSection = () => {
 
 
 
+
 // SECTION RECOMENDADOS
 
 
@@ -82,8 +94,6 @@ const welcomeSection = () => {
 const sectionRecomend = () => {
     const divFlex = document.querySelector('#cajaRecomendados');
    
-
- 
 
     arrayCard.forEach((item) => {
         const cajaFigure = document.createElement('FIGURE');
@@ -93,6 +103,7 @@ const sectionRecomend = () => {
         const cardMsg = document.createElement('P');
         divFlex.append(cajaFigure);
         cajaFigure.append(divImg);
+        cajaFigure.classList.add('rojo')
         divImg.classList.add('divCard')
         divImg.append(cardImg);
         cardImg.src = `assets/${item.url}`;
@@ -103,9 +114,25 @@ const sectionRecomend = () => {
         cardMsg.innerHTML = item.msg
     });
 
-
-
 }
+
+    sectionRecomend();
+
+    const rojo = document.querySelectorAll('.rojo');
+
+    rojo.forEach(item => {
+      item.addEventListener('mouseenter', () => {
+        item.style.borderColor = 'red';
+      });
+    
+      item.addEventListener('mouseleave', () => {
+        item.style.border = '1.5px solid rgba(5, 5, 5 , 0.2)';
+      });
+    });
+    
+
+ 
+
 
 
 // SECTION DESTINOS 
@@ -134,6 +161,7 @@ const sectionDestino = () => {
 
 
 
-sectionRecomend();
+// sectionRecomend();
 welcomeSection();
 sectionDestino();
+
